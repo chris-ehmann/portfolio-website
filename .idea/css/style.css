@@ -49,6 +49,7 @@ body {
     background: var(--light_blue);
     text-align: center;
     color: var(--light_grey_blue);
+    border-radius: 1rem;
 
     display: flex;
     flex-direction: column;
@@ -65,7 +66,7 @@ body {
 }
 
 .card-hover-box:hover .project-card{
-    animation: .2s ease .15s cardHover forwards;
+    animation: .15s ease .15s cardHover forwards;
 }
 
 .card-title {
@@ -88,7 +89,7 @@ body {
 }
 
 .card-link:hover {
-    animation: 1s ease darkenCardLink forwards;
+    animation: .2s ease darkenCardLink forwards;
 }
 
 #card-container {
@@ -192,7 +193,7 @@ li a:hover {
 
 @keyframes darkenCardLink {
     to {
-        filter: brightness(0) saturate(100%) invert(15%) sepia(16%) saturate(5172%) hue-rotate(157deg) brightness(94%) contrast(101%);
+        filter: brightness(0) saturate(100%) invert(14%) sepia(37%) saturate(2620%) hue-rotate(159deg) brightness(98%) contrast(103%);
     }
 }
 
