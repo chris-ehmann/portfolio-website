@@ -1,0 +1,249 @@
+:root {
+    --background: #ffffff;
+    --dark_blue: #284B63;
+    --light_grey_blue: #6F89A2;
+    --light_blue: #ccc9dc;
+    --indigo: #223843;
+}
+
+@font-face {
+    font-family: "coolvetica";
+    src: url("../fonts/coolvetica.otf");
+    font-size: 3vh;
+}
+
+::selection {
+    background: var(--light_grey_blue);
+    color: white;
+}
+
+* {
+    font-family: coolvetica, Verdana, sans-serif, monospace;
+    font-weight: normal;
+    letter-spacing: .05em;
+}
+
+body {
+    background-color: var(--background);
+    margin: 1vh;
+    padding: 1vh;
+    max-width: 100%;
+    height: 95vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-list-item {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    font-size: 30px;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.section-link {
+    text-decoration: none;
+    color: var(--light_grey_blue);
+    padding: 0;
+    margin: 0;
+    transition: all .2s ease;
+}
+
+.section-link::before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: -35px;
+    height: 5px;
+    background-color: var(--dark_blue);
+    transform: scaleX(0);
+    transform-origin: top right;
+
+    transition: transform 0.2s;
+}
+
+.section-link::after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    margin-bottom: 32px;
+    width : 100%;
+    vertical-align: middle;
+    height: 5px;
+    background-color: var(--dark_blue);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+
+    transition: transform 0.2s;
+}
+
+.section-link:hover {
+    color: var(--dark_blue);
+}
+
+.section-link:hover::before {
+    transform-origin: top left;
+    transform: scaleX(1);
+}
+
+.section-link:hover::after {
+    transform-origin: bottom right;
+    transform: scaleX(1);
+}
+
+
+.image-with-desc {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic {
+    height: 30vh;
+    width: 30vh;
+    filter: drop-shadow(1vh 1vh var(--dark_blue));
+}
+
+.img-desc {
+    margin-left: 4vh;
+    width: 30vh;
+    color: var(--dark_blue);
+}
+
+.subtitle {
+    margin: 0;
+    padding: 0;
+    margin-top: 1vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 2em;
+    color: var(--light_grey_blue);
+}
+
+.project-list {
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.project {
+    margin-top: 3vh;
+}
+
+.project-name {
+    color: var(--dark_blue);
+}
+
+.project-desc {
+    margin-top: -1vh;
+    color: var(--light_grey_blue);
+}
+
+.github-link {
+    filter: invert(51%) sepia(39%) saturate(273%) hue-rotate(168deg) brightness(94%) contrast(89%);
+    transition: all .2s ease;
+}
+
+.github-link:hover {
+    filter: invert(24%) sepia(28%) saturate(884%) hue-rotate(161deg) brightness(95%) contrast(90%);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+}
+
+#container {
+    padding: 0;
+    margin: 0;
+}
+
+#main-container {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#secondary-container {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#main-header {
+    margin: 0;
+    margin-bottom: 3vh;
+    padding: 0;
+}
+
+#name-plate {
+    font-weight: bold;
+    color: var(--dark_blue);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 4em;
+}
+
+#section-links {
+    display: inline-block;
+    margin: 0 auto;
+    color: var(--light_grey_blue);
+    text-align: center;
+    padding: 0;
+}
+
+#section-links-container {
+    display: flex;
+    margin-top: 3vh;
+    margin-bottom: 6vh;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+#main-footer {
+    padding: 0;
+    margin: 0;
+    margin-top: 3vh;
+    margin-bottom: -2vh;
+    height: 30px;
+    background: white;
+    z-index: 0;
+}
+
+#copyright {
+    color: var(--indigo);
+    font-size: .9em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    background: white;
+    z-index: 0;
+}
+
+/*Scrollbar Edit*/
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    visibility: hidden;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light_grey_blue);
+    border-radius: 15px;
+}
