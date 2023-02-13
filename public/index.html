@@ -10,27 +10,42 @@
 </head>
 
     <body>
-
         <div id="main-container">
-            <div id="secondary-container">
+            <div id="header-container">
                 <header id="main-header">
-                    <div id="container">
-                        <h1 id="name-plate">hi! i'm chris.</h1>
-                        <p class="subtitle">i'm a software engineering student.</p>
+                    <div id="title-container">
+                        <h1 id="name-plate">Hey! I'm Chris</h1>
+                        <h1 id="wave-emoji"> 👋 </h1>
                     </div>
+                    <p class="subtitle">I'm a software engineering student at UVic.</p>
                 </header>
-
-                <section id="links">
-                    <div id="section-links-container">
-                        <ul id="section-links">
-                            <li class="section-list-item"><a class="section-link" href="portfolio.html">portfolio</a></li>
-                        </ul>
+            </div>
+            <div id="body-container">
+                <section id="projects">
+                    <h2 class="section-header">Projects</h2>
+                    <div class="line"></div>
+                    <div class="project">
+                        <div class=project-header-container>
+                            <h3 class="project-header">Password Manager</h3>
+                            <a class="project-link" href="https://github.com/chris-ehmann/password-manager"><img class="project-link-img" src="img/github.svg"></img></a>
+                        </div>
+                        <p class="project-desc">A desktop application password manager written in Java, using JavaFX. Master passwords are hashed using PBKDF2-HMAC-SHA1 and stored in a local SQLite database.</p>
+                    </div>
+                    <div class="project">
+                        <div class=project-header-container>
+                            <h3 class="project-header">Personal Website</h3>
+                            <a class="project-link" href="https://github.com/chris-ehmann/portfolio-website"><img class="project-link-img" src="img/github.svg"></img></a>
+                        </div>
+                        <p class="project-desc">A personal website used to display all projects I've worked on/am working on. Created using CSS and HTML.</p>
+                    </div>
+                    <div class="project">
+                        <div class=project-header-container>
+                            <h3 class="project-header">PWM Signal Generation and Monitoring System</h3>
+                        </div>
+                        <p class="project-desc">A course project for ECE355 at UVic. Developed an embedded system to generate a square wave and monitor the frequency through a connected LCD.</p>
                     </div>
                 </section>
             </div>
-            <footer id="main-footer">
-                <p id="copyright">copyright &copy; 2023 chris ehmann</p>
-            </footer>
         </div>
     </body>
 </html>
