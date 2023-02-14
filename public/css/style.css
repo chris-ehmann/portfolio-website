@@ -51,6 +51,7 @@ body {
     margin: auto 0;
     margin-left: 1rem;
     transform: rotate(15deg);
+    transform-origin: 50% 50%;
 }
 
 .subtitle {
