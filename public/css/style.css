@@ -74,6 +74,10 @@ body {
     margin-bottom: 2.5rem;
 }
 
+.project-desc {
+    color: rgb(50, 50, 50);
+}
+
 .line {
     border: #141414 solid 1px;
     height: 0px;
